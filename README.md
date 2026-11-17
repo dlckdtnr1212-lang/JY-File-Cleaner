@@ -1,14 +1,10 @@
 # JY File Cleaner v2.0 Beta — 올인원 Windows 파일 관리자
 
-> ⚠️ **배포 일시 중단 (2026-11-18)**
->
-> 현재 공개된 `JY_File_Cleaner_v2.0_Beta.zip`은 실제 사용자 PC에서 최신 WebView2 UI 실행이 실패하는 문제가 확인됐습니다(`Python.Runtime.Loader.Initialize`, `0x80131515`). **원인 수정과 배포본 재검증이 끝날 때까지 다운로드 및 실행을 권장하지 않습니다.** 기존 GitHub Release 자산은 기술적으로 접근 가능할 수 있으므로 파일을 받더라도 실행하지 마세요. 정상 배포가 확인되면 이 안내를 갱신합니다.
-
 - **개발자**: JYrun
 - **버전**: v2.0 Beta (`2.0.0-beta`)
 - **대상 운영체제**: Windows 10 / Windows 11 (64-bit)
 - **배포 라이선스**: 무료 개인 및 업무용 독립 실행 프로그램 (Freeware)
-- **배포 상태**: **일시 중단 — 공개 ZIP에 실행 결함 확인, 재검증 전 사용 금지**
+- **GitHub 공식 릴리스**: [JY-File-Cleaner Releases](https://github.com/dlckdtnr1212-lang/JY-File-Cleaner/releases)
 
 ---
 
@@ -50,8 +46,8 @@
 
 ## 4. 실행 및 다운로드 안내
 
-### 배포 일시 중단
-현재 공개된 ZIP은 최신 GUI 실행 문제가 확인되어 다운로드 및 실행을 권장하지 않습니다. 수정된 배포본이 검증되어 재공개되기 전까지 설치 절차를 진행하지 마세요.
+### 독립 실행본 다운로드 (권장)
+GitHub Releases에서 `JY_File_Cleaner_v2.0_Beta.zip`을 내려받아 압축 해제 후 `JY_File_Cleaner_v2.0_Beta.exe`를 더블클릭합니다.
 - **기본 실행**: 최신 Fluent 8대 메뉴 WebView2 UI가 자동 실행됩니다.
 - **레거시 실행**: `JY_File_Cleaner_v2.0_Beta.exe --classic` 입력 시 경량 Tkinter 화면으로 시작합니다.
 

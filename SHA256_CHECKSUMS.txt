@@ -1,4 +1,2 @@
-# JY File Cleaner v2.0 Beta — SHA-256
-# Gemini 배포 완료보고서 2026-11-17 기준 검증 기록. 실제 파일 업로드 후 재확인 권장.
-6f752432008d75678215bcf5a31fb3e05b405cc3721f1305804ae4d1390ddfab  JY_File_Cleaner_v2.0_Beta.zip
-5fae2a4ed0b01cbc5cc4273f61b28461c655704d7184d8fc0420136235b8b790  JY_File_Cleaner_v2.0_Beta.exe
+4eb2e2f0bcf368367fdd8d96cb9d342501aa09f422b0cd423a99138fee23205d *JY_File_Cleaner_v2.0_Beta.zip
+b74fb9cdb1bc970a7f5d1b81d41a17373b0f5cabb9c51e55137285af298ee99e *JY_File_Cleaner_v2.0_Beta.exe

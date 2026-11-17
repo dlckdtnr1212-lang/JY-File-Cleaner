@@ -8,7 +8,7 @@
 - Microsoft Edge WebView2 Runtime: 최신 그래픽 화면에 필요
 - 권장: 중요한 파일과 폴더는 정리 전 별도로 백업
 
-WebView2가 없다면 [Microsoft 공식 WebView2 페이지](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)의 런타임 설치 안내를 사용하세요. 미설치 시 구형 화면 자동 전환은 개발 환경에서 별도 실기 검증하지 않았으므로 보장하지 않습니다.
+최신 8개 메뉴 WebView2 화면이 기본입니다. WebView2 실행 오류 시 구형 Tkinter 화면으로 조용히 넘어가던 문제를 줄이기 위해 실행 전 확인·안내와 시작 로그 기록을 보강했습니다(개발보고서 기준). WebView2가 없다면 [Microsoft 공식 WebView2 페이지](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)에서 Runtime을 설치하세요. **WebView2 미설치 PC에서의 실제 동작은 별도 검증하지 않았습니다.**
 
 ## 2. 다운로드와 실행
 
@@ -20,6 +20,14 @@ WebView2가 없다면 [Microsoft 공식 WebView2 페이지](https://developer.mi
 6. 사용을 마치면 프로그램을 종료합니다.
 
 **별도 설치 프로그램(Setup)이 아니라 압축 해제 후 실행하는 배포 방식입니다.**
+
+### Windows SmartScreen 안내
+
+처음 실행할 때 Windows에서 **'Windows의 PC 보호'** 또는 **'알 수 없는 게시자'** 경고를 표시할 수 있습니다. 코드 서명이 없는 개인 배포 프로그램에서 나타날 수 있지만, 경고가 안전성을 보증하는 것은 아닙니다. 공식 GitHub Release에서 받은 파일인지 확인하고 [SHA-256 체크섬](SHA256_CHECKSUMS.txt)을 대조하세요. 파일 출처를 확인하고 신뢰하는 경우에만 Windows 화면의 **'추가 정보' → '실행'**을 선택할 수 있습니다. 백신이나 Windows 보안 기능을 끄지 마세요.
+
+### 예상과 다른 구형 화면이 나타나는 경우
+
+최신 8개 메뉴 화면이 아니라 구형 Tkinter 화면이 뜨면 정상 배포 화면으로 간주하지 마세요. 프로그램을 종료한 뒤 WebView2 Runtime 설치 상태를 확인하세요. 시작 오류 기록은 `%LOCALAPPDATA%\JY_File_Cleaner\logs\startup.log`에서 확인할 수 있습니다. 공개 오류 제보 시 개인 경로 등은 가려 주세요.
 
 ## 3. 기본 이용 흐름
 

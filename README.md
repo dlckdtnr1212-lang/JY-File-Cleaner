@@ -4,9 +4,8 @@
 - **버전**: v2.0 Beta (`2.0.0-beta`)
 - **대상 운영체제**: Windows 10 / Windows 11 (64-bit)
 - **배포 라이선스**: 무료 개인 및 업무용 독립 실행 프로그램 (Freeware)
-- **GitHub 공식 릴리스**: [JY File Cleaner v2.0 Beta 다운로드](https://github.com/dlckdtnr1212-lang/JY-File-Cleaner/releases/tag/v2.0-beta)
-- **ZIP 직접 다운로드**: [JY_File_Cleaner_v2.0_Beta.zip](https://github.com/dlckdtnr1212-lang/JY-File-Cleaner/releases/download/v2.0-beta/JY_File_Cleaner_v2.0_Beta.zip)
-- **실행 확인 범위**: Windows 10 64비트에서 최신 8개 메뉴 WebView2 UI 표시 확인 (2026-11-18). Windows 11 실기 검증은 미실시
+- **배포 상태**: **사용·다운로드 보류 권고 (2026-11-18)** — 중복 파일 결과에서 사본 선택 및 정리 시뮬레이션이 정상 진행되지 않는 문제가 확인되어 원인 조사 중입니다. GitHub Release 파일은 아직 직접 접근 가능할 수 있으나 다운로드 및 사용을 권장하지 않습니다.
+- **실행 확인 범위**: Windows 10 64비트에서 최신 8개 메뉴 WebView2 UI 표시만 확인됨. 전체 기능 사용 검증 완료를 의미하지 않습니다.
 
 ---
 

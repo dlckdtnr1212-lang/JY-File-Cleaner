@@ -1,49 +1,32 @@
-# JY File Cleaner v2.0 Beta — 공식 배포 안내
+# JY File Cleaner v2.0 Beta — Candidate 50 배포 안내
 
 **개발자:** JYrun  
-**배포 형태:** Windows 64비트 무료 ZIP, PyInstaller onedir  
-**공식 블로그:** https://blog.naver.com/asdfgh1
+**형태:** Windows 10/11 64비트 대상 무료 ZIP 배포본 (Windows 10 64비트 실사용 확인)
 
 ## 다운로드
 
-첨부된 **`JY_File_Cleaner_v2.0_Beta.zip`**을 다운로드하여 **전체 압축 해제**한 뒤, 내부의 `JY_File_Cleaner_v2.0_Beta.exe`를 실행하세요. EXE만 따로 복사하면 실행에 필요한 `_internal` 의존성 파일이 누락될 수 있습니다.
+[공식 Release](https://github.com/dlckdtnr1212-lang/JY-File-Cleaner/releases/tag/v2.0-beta)에서 `JY_File_Cleaner_v2.0_Beta.zip`을 내려받고 전체 압축 해제한 뒤 `JY_File_Cleaner_v2.0_Beta.exe`를 실행하세요. `_internal` 폴더와 배포 구성 파일을 유지해야 합니다.
 
-- ZIP: 35,848,893바이트 (약 34.19 MiB)
-- ZIP SHA-256: `ba89b334b4ee1179cb2502535a912b01832bb0a1e5b626281d6374fd239fbebf`
-- EXE SHA-256: `ace647201ca84a6bc1f5e4cc08c73c1fa85482c7da7e5446c8af9c5ab3d342f3`
+- Candidate 50 ZIP 크기: **35,892,468바이트**
+- ZIP SHA-256: `893acd5d483c44558ea70b2201a9fa0a46675609933c7e7a7ea8ac9e7f4f686b`
+- EXE SHA-256: `783727b56ba7e099e6ff204aac79f5af1a2cdf76199a6f93c8a7ea44b4eb7fd6`
 
-## 인터넷 다운로드 호환성 (.NET MOTW 대응)
+## 이번 베타 수정판
 
-브라우저로 다운로드한 압축 파일에서 Windows Mark of the Web(`Zone.Identifier`)이 내부 DLL로 전파될 때 .NET CLR 어셈블리 로딩이 차단되던 문제를 해결했습니다. `loadFromRemoteSources` 활성화 설정(`.exe.config`) 및 진입점 내부 어셈블리 방어 로직을 적용하여, 사용자가 여러 DLL의 속성을 직접 차단 해제하거나 별도 스크립트를 실행하지 않아도 최신 8개 메뉴 WebView2 화면이 바로 실행되도록 보완했습니다.
+이전 베타의 중복 파일 선택·정리 시뮬레이션 문제를 수정 대상으로 삼아 배포 후보를 갱신했습니다. 빈 폴더 탐색과 다운로드 정리 후 화면 갱신, 파일 위치 열기, 백업 비교 필터, OneDrive 보호 버튼의 사용 흐름을 점검했습니다.
 
-- 최신 8개 메뉴 UI 실행에 Microsoft Edge WebView2 Runtime 필요 (Windows 10 일부 구버전 환경에서는 [공식 설치 페이지](https://go.microsoft.com/fwlink/p/?LinkId=2124703)를 통한 설치 필요)
-- 실행 문제 발생 시 `%LOCALAPPDATA%\JY_File_Cleaner\logs\startup.log` 및 `startup_error.log` 확인
-- Windows SmartScreen의 'Windows의 PC 보호' 경고가 나타날 수 있습니다. **공식 출처와 SHA-256을 확인**한 뒤 파일을 신뢰하는 경우에만 '추가 정보' → '실행'을 선택할 수 있습니다. 보안 기능을 끄지 마세요.
+기능은 대시보드, 디스크·파일 정리, 다운로드 스마트 정리, 중복 파일 탐색, 유사 사진 비교, 파일 편의 도구, 백업·폴더 비교, 설명서·정보의 8개 메뉴로 구성됩니다. 유사 동영상 탐색 기능은 제공하지 않습니다.
 
-## 주요 기능
+## 확인된 범위
 
-- 디스크·파일 정리 후보 분석과 보호 항목 구분
-- 대용량 파일·폴더 TOP 20 및 폴더별 점유율
-- 다운로드 폴더 파일 유형별 정리 계획
-- SHA-256 기반 완전 중복 파일 검색
-- 유사 사진 찾기 및 미리보기
-- 파일명 일괄 변경·이미지 변환·EXIF 확인
-- 폴더와 ZIP 내용 비교
-- 한국어 UI, 안내 및 도움말
+- **사용자 직접 확인, Windows 10 64비트 Candidate 50:** ZIP 압축 해제 및 EXE 실행, D드라이브 빈 폴더 탐색, 다운로드 정리 후 자동 갱신, 한글·쉼표 포함 파일의 위치 열기, 백업 비교 필터, OneDrive 보호 파일 삭제 버튼 비활성화.
+- **소스 대응 관계:** 배포 EXE의 보고된 로컬 소스 커밋 `ee15c61`은 현재 GitHub에서 조회되지 않습니다. GitHub의 문서·태그 스냅샷을 이 실행 파일의 소스와 동일하다고 보장하지 않습니다.
+- **미검증:** Windows 11 실기, 다양한 PC의 다운로드 보안 표시(MOTW)와 SmartScreen 흐름, 전체 기능의 모든 입력·환경.
 
-## 검증 결과와 한계
+WebView2 Runtime이 없으면 [Microsoft 공식 페이지](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)에서 설치 여부를 확인하세요. SmartScreen 경고 시 공식 배포처와 해시를 확인하고 신뢰하는 경우에만 화면의 실행 옵션을 선택하세요. 보안 기능을 끄지 마세요.
 
-- 소스 자동 회귀 테스트 115개 실행·통과, 실패·건너뜀 0개 보고
-- 정정된 ZIP 무결성과 GitHub Release 배포를 확인했으며, 다운로드본의 Zone.Identifier 환경에서 최신 WebView2 창 실행·종료 확인
-- **Windows 10 64비트(22H2) 실기 검증** (Windows 11 실기 직접 검증은 별도로 수행하지 않음)
-- 격리된 합성 테스트 파일 대상 백엔드 기능 및 휴지통 처리 확인
-- 유사 사진 탐색은 회전·심한 크롭을 모두 인식하지 않으며 오탐·누락 가능성이 있음
-- 본 프로그램은 특정 또는 모든 사용자 환경에서의 무결점 동작을 보증하지 않습니다.
+정리 전 시뮬레이션과 보호 사유를 확인하고 원본을 최소 한 개 남기세요. Windows 휴지통에서의 복원은 설정과 상태에 따라 달라질 수 있습니다.
 
-**베타 버전입니다.** 실제 파일 이동·변경·정리 전에 결과를 확인하고 중요한 자료는 백업해 주세요. 처음 사용한다면 소량의 테스트 파일로 사용법을 익히는 것을 권장합니다.
+[설치·사용 안내](INSTALL_KO.md) · [오류 제보·개선 의견](https://github.com/dlckdtnr1212-lang/JY-File-Cleaner/issues)
 
-[설치·상세 사용 안내](https://github.com/dlckdtnr1212-lang/JY-File-Cleaner/blob/main/INSTALL_KO.md) · [오류 제보](https://github.com/dlckdtnr1212-lang/JY-File-Cleaner/issues)
-
----
-
-**Developed by JYrun**
+**Developed by JYrun** · [공식 블로그](https://blog.naver.com/asdfgh1)

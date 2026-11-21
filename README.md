@@ -2,6 +2,9 @@
 
 **JYrun이 만든 무료 Windows 파일 관리 프로그램**입니다. Windows 10/11 64비트를 대상으로 하며, ZIP을 압축 해제해 실행합니다. Python 설치는 필요하지 않습니다.
 
+<img width="953" height="630" alt="1" src="https://github.com/user-attachments/assets/8d7302bb-2177-46c0-bb9b-96adc9670bbc" />
+
+
 ## 무엇을 할 수 있나요?
 
 | 메뉴 | 주요 기능 |
